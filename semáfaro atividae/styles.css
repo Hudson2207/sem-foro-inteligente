@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+#boasVindas {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #004d40;
+}
+
+.semaforo {
+  width: 120px;
+  background-color: #212121;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  margin-bottom: 30px;
+}
+
+.luz {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 15px auto;
+  background-color: #e91515;
+  opacity: 0.3;
+  transition: all 0.3s ease-in-out;
+}
+
+#vermelho.ativo { background-color: red; opacity: 1; box-shadow: 0 0 15px red; }
+#amarelo.ativo { background-color: yellow; opacity: 1; box-shadow: 0 0 15px yellow; }
+#verde.ativo { background-color: rgb(31, 219, 63); opacity: 1; box-shadow: 0 0 15px lime; }
+
+#contador {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #0288d1;
+}
+
+#mensagem {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #061b19;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #027e86;
+}
+
+@media (max-width: 500px) {
+  .semaforo {
+    width: 90px;
+    padding: 10px;
+  }
+
+  .luz {
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
